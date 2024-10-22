@@ -7,6 +7,7 @@
             string MyName;
             MyName = "Pavel";
             Console.WriteLine(MyName);
+            Console.WriteLine("Привет, \n мир");
             Console.ReadKey();
 
         }
