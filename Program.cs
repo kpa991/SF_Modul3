@@ -21,6 +21,13 @@ namespace Modul3
         Wednesday,
         Friday
     }
+
+    enum Semaphore : int
+    {
+        Red = 100,
+        Yellow = 200,
+        Green = 300
+    }
 }
   
 
