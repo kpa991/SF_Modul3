@@ -1,21 +1,26 @@
-﻿namespace Modul3
+﻿using System;
+
+namespace Modul3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string Name = "Pavel";
-            byte MyAge = 25;
-            bool HaveIApet = false;
-            double ShoeSize = 42.2;
+            DaysOfWeek MyFavoriteDay;
 
-            Console.WriteLine("Меня зовут " + Name);
-            Console.WriteLine("Мне " + MyAge + " Лет");
-            Console.WriteLine("есть ли у меня питомцы? "+ HaveIApet);
-            Console.WriteLine("Мой размер ноги " + ShoeSize);
+            MyFavoriteDay = DaysOfWeek.Friday;
 
-            Console.ReadKey();
+            Console.WriteLine(MyFavoriteDay);
 
         }
+    } 
+    enum DaysOfWeek : byte
+    {
+        Tuesday,
+        Monday,
+        Wednesday,
+        Friday
     }
 }
+  
+
