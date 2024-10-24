@@ -6,27 +6,26 @@ namespace Modul3
     {
         static void Main(string[] args)
         {
-            DaysOfWeek MyFavoriteDay;
-
-            MyFavoriteDay = DaysOfWeek.Friday;
-
-            Console.WriteLine(MyFavoriteDay);
-
+            
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            byte age = (byte)int.Parse(Console.ReadLine());
+            Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+            Console.Write("What is your favorite day of week? ");
+            DayOfWeek day = (DayOfWeek)int.Parse(Console.ReadLine());
+            Console.WriteLine("Your favorite day is {0}", day);
         }
-    } 
+    }
     enum DaysOfWeek : byte
     {
-        Tuesday,
-        Monday,
+        Monday =1,
+        Tuesday =2,
         Wednesday,
-        Friday
-    }
-
-    enum Semaphore : int
-    {
-        Red = 100,
-        Yellow = 200,
-        Green = 300
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
     }
 }
   
