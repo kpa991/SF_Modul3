@@ -16,6 +16,7 @@ namespace Modul3
             DateTime birthdate = DateTime.Parse(date);
             Console.WriteLine("Your name is {0}, your age is {1} and your birthdate is " + birthdate.ToString("dd.MM.yyyy"), name, age);
             
+
         }
     }
     enum DaysOfWeek : byte
